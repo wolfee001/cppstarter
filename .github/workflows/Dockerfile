@@ -1,0 +1,12 @@
+ARG VARIANT=gcc11
+FROM ghcr.io/wolfee001/devcontainers-${VARIANT}:master
+
+COPY . /workspace
+RUN sudo chown -R conan /workspace
+
+RUN cd /workspace \
+    && mkdir build \
+    && cd build \
+    && cmake .. -DCMAKE_BUILD_TYPE=Release \
+    && cmake --build . --target install \
+    && cd ..
