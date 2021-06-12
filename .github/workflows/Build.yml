@@ -16,3 +16,7 @@ jobs:
     - name: Build gcc11
       run: |
         docker build . --file .github/workflows/Dockerfile --tag gcc11:$(date +%s) --build-arg VARIANT=gcc11
+
+    - name: Build clang11
+      run: |
+        docker build . --file .github/workflows/Dockerfile --tag clang11:$(date +%s) --build-arg VARIANT=clang11
