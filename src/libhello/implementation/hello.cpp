@@ -5,13 +5,10 @@
 #include <fmt/core.h>
 
 namespace hello {
-Greeter::Greeter(const std::string& name)
-    : mName(name)
+Greeter::Greeter(std::string name)
+    : mName(std::move(name))
 {
 }
 
-void Greeter::Greet() const
-{
-    std::cout << fmt::format("Hello {}", mName) << std::endl;
-}
-}
+void Greeter::Greet() const { std::cout << fmt::format("Hello {}", mName) << std::endl; }
+} // namespace hello

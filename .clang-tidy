@@ -1,0 +1,6 @@
+---
+Checks:          '*,-modernize-use-trailing-return-type,-fuchsia-overloaded-operator,-fuchsia-default-arguments-calls,-llvmlibc-*'
+WarningsAsErrors: '1'
+HeaderFilterRegex: ''
+FormatStyle:     'webkit'
+...

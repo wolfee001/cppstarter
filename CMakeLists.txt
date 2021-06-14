@@ -13,7 +13,9 @@ set_project_warnings(project_warnings)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 include(cmake/Conan.cmake)
-#setup_conan(conanfile.txt)
+
+include(cmake/StaticAnalyzers.cmake)
+setup_static_analyzers()
 #--------------
 
 add_subdirectory(src)

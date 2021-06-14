@@ -7,6 +7,6 @@ RUN sudo chown -R conan /workspace
 RUN cd /workspace \
     && mkdir build \
     && cd build \
-    && cmake .. -DCMAKE_BUILD_TYPE=Release \
+    && cmake .. -DCMAKE_BUILD_TYPE=Release -DSTATIC_ANALYZERS=1 \
     && cmake --build . --target install \
     && cd ..

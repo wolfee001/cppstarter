@@ -5,11 +5,11 @@
 namespace hello {
 class Greeter {
 public:
-    Greeter(const std::string& name);
+    explicit Greeter(std::string name);
 
     void Greet() const;
 
 private:
     std::string mName;
 };
-}
+} // namespace hello
