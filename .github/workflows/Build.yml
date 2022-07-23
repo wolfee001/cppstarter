@@ -54,5 +54,6 @@ jobs:
 
     - name: Run node
       run: |
-        cd ${{github.workspace}}/node_hello
+        cd ${{github.workspace}}/src/node_hello
+        npm install
         node index.js
