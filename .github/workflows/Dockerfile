@@ -14,5 +14,5 @@ RUN cd /workspace \
 RUN target/hello
 
 RUN cd /workspace/src/node_hello \
-    && npm install
+    && npm install \
     && node index.js
