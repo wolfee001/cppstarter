@@ -1,4 +1,4 @@
-const H = require('hello');
+const H = require('libhello');
 
 console.log("Hello, World!")
 
