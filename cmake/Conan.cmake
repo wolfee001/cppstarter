@@ -2,7 +2,7 @@ include(FetchContent)
 FetchContent_Declare(
   conan
   GIT_REPOSITORY https://github.com/conan-io/cmake-conan.git
-  GIT_TAG        v0.16.1
+  GIT_TAG        0.18.1
 )
 FetchContent_GetProperties(conan)
 if(NOT conan_POPULATED)

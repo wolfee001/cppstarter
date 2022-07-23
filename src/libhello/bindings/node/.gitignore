@@ -1,0 +1,3 @@
+build_dependencies
+package/addon.node
+package/*.tgz

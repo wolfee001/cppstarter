@@ -9,7 +9,7 @@ int main()
     std::cout << fmt::format("Hello, {}!", "World") << std::endl;
 
     hello::Greeter greeter("wolfee");
-    greeter.Greet();
+    std::cout << greeter.Greet() << std::endl;
 
     return 0;
 }

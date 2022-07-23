@@ -10,5 +10,5 @@ Greeter::Greeter(std::string name)
 {
 }
 
-void Greeter::Greet() const { std::cout << fmt::format("Hello {}", mName) << std::endl; }
+std::string Greeter::Greet() const { return fmt::format("Hello {}", mName); }
 } // namespace hello

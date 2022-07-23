@@ -7,7 +7,7 @@ class Greeter {
 public:
     explicit Greeter(std::string name);
 
-    void Greet() const;
+    std::string Greet() const;
 
 private:
     std::string mName;

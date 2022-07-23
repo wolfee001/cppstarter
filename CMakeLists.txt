@@ -16,6 +16,8 @@ include(cmake/Conan.cmake)
 
 include(cmake/StaticAnalyzers.cmake)
 setup_static_analyzers()
+
+include (cmake/NodeBinding.cmake)
 #--------------
 
 add_subdirectory(src)

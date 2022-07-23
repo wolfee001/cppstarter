@@ -1,0 +1,11 @@
+{
+  "name": "node_hello",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "wolfee",
+  "license": "MIT",
+  "dependencies": {
+    "hello": "file:../libhello/bindings/node/package/libhello-1.0.0.tgz"
+  }
+}
