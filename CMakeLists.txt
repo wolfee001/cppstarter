@@ -18,6 +18,8 @@ include(cmake/StaticAnalyzers.cmake)
 setup_static_analyzers()
 
 include (cmake/NodeBinding.cmake)
+
+enable_testing()
 #--------------
 
 add_subdirectory(src)
