@@ -1,4 +1,4 @@
-function(make_nodejs_binding libs_to_link)
+function(make_nodejs_binding libs_to_link install_destination)
   set(target_name "addon")
   file(GLOB_RECURSE wrapper_sources "wrapper/*.cpp")
   set(BUILD_DEPENDENCY_DIR "${CMAKE_CURRENT_SOURCE_DIR}/build_dependencies")
@@ -72,5 +72,7 @@ function(make_nodejs_binding libs_to_link)
     COMMAND npm pack
     WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/package
   )
+
+  install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/package/ DESTINATION ${install_destination} FILES_MATCHING PATTERN "*.tgz")
 
 endfunction()

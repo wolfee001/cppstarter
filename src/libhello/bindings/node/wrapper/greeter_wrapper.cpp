@@ -1,4 +1,4 @@
-#include "greater_wrapper.h"
+#include "greeter_wrapper.h"
 #include "napi.h"
 
 #include <libhello/hello.h>

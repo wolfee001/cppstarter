@@ -5,7 +5,7 @@
 #include <napi.h>
 #pragma GCC diagnostic pop
 
-#include "greater_wrapper.h"
+#include "greeter_wrapper.h"
 
 Napi::Object InitAll(Napi::Env env, Napi::Object exports)
 {
