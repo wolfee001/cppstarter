@@ -31,6 +31,11 @@ jobs:
       with:
         node-version: ${{ matrix.node }}
 
+    - name: node addon api install
+      if: matrix.os == 'windows-latest'
+      run: |
+        npm install -g node-addon-api
+
     - name: Configure CMake
       run: cmake -B ${{github.workspace}}/build -DSTATIC_ANALYZERS=1 -DCMAKE_BUILD_TYPE=Release
 
