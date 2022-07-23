@@ -1,3 +1,5 @@
 build_dependencies
 package/addon.node
 package/*.tgz
+test/node_modules
+test/package-lock.json

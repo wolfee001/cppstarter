@@ -1,7 +1,0 @@
-build
-target
-.clangd
-.cache
-.devcontainer
-.vscode
-compile_commands.json

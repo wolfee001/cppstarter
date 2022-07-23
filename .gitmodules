@@ -1,3 +1,0 @@
-[submodule "devcontainers"]
-	path = devcontainers
-	url = https://github.com/wolfee001/devcontainers.git

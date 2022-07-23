@@ -6,6 +6,6 @@
   "author": "wolfee",
   "license": "MIT",
   "dependencies": {
-    "hello": "file:../../target/libhello-1.0.0.tgz"
+    "libhello": "file:../../target/libhello-1.0.0.tgz"
   }
 }
