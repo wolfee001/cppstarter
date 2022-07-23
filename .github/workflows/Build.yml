@@ -26,6 +26,11 @@ jobs:
     - name: Install conan
       uses: turtlebrowser/get-conan@main
 
+    - name: Install Node
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node }}
+
     - name: Configure CMake
       run: cmake -B ${{github.workspace}}/build -DSTATIC_ANALYZERS=1 -DCMAKE_BUILD_TYPE=Release
 
@@ -36,11 +41,6 @@ jobs:
       run: |
         cd ${{github.workspace}}/build
         ctest .
-
-    - name: Install Node
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{ matrix.node }}
 
     - name: Jest
       run: |
